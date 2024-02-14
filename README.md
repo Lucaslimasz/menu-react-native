@@ -1,6 +1,6 @@
 <p align="center">
-<img alt="Nlw Expert - Menu" title="Nlw Expert - Menu" src="background.png" width="100%" />
-<img alt="Nlw Expert - Menu" title="Nlw Expert - Menu" src="logo.png" width="100%" />
+<img alt="Nlw Expert - Menu" title="Nlw Expert - Menu" src=".github/background.png" width="100%" />
+<img alt="Nlw Expert - Menu" title="Nlw Expert - Menu" src=".github/logo.png" width="100%" />
 </p>
 
 <br/>
