@@ -4,7 +4,7 @@ import { useCartStore } from "@/stores/cart-store";
 import { PRODUCTS } from "@/utils/data/products";
 import { formatCurrency } from "@/utils/functions/format-currency";
 import { Feather } from "@expo/vector-icons";
-import { useLocalSearchParams, useNavigation } from "expo-router";
+import { Redirect, useLocalSearchParams, useNavigation } from "expo-router";
 import { Image, Text, View } from "react-native";
 
 const Product = () => {
@@ -14,11 +14,16 @@ const Product = () => {
 
   const product = PRODUCTS.filter((item) => item.id === id)[0];
 
-  const handleAddToCart = () => {
-    cartStore.add(product);
-    navigation.goBack();
+  function handleAddToCart() {
+    if (product) {
+      cartStore.add(product)
+      navigation.goBack()
+    }
   }
 
+  if (!product) {
+    return <Redirect href="/" />
+  }
   return (
     <View className="flex-1">
       <Image
