@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/header";
 import CategoryButton from "@/components/category";
 import Product from "@/components/product";
 import { useCartStore } from "@/stores/cart-store";

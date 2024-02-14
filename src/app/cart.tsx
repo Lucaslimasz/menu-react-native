@@ -9,7 +9,7 @@ import { formatCurrency } from "@/utils/functions/format-currency";
 
 import { Button } from "@/components/button";
 import { Feather } from "@expo/vector-icons";
-import Header from "@/components/Header";
+import Header from "@/components/header";
 import Product from "@/components/product";
 import { Input } from "@/components/input";
 import LinkButton from "@/components/linkButton";
